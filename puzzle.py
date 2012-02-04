@@ -8,9 +8,9 @@ def flip(n, numIterations, hits):
 			hits += 1
 			divs[x] = 0
 	if hits > (.99 * div_count):
-		print(numIterations / 10.0);
+		return (numIterations / 10.0);
 	else:
-		flip(n, numIterations+1, hits)
+		return flip(n, numIterations+1, hits)
 
 
 if __name__ == "__main__":
@@ -22,4 +22,5 @@ if __name__ == "__main__":
 		for i in range(n):
 			divs.append(1)
 			div_count += 1
-		flip(div_count * .01, numIterations = 0, hits = 0)
+		time = flip(div_count * .01, numIterations = 0, hits = 0)
+		print(time)
