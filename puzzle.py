@@ -20,8 +20,8 @@ def iterate(n):
 
 if __name__ == "__main__":
 	times = []
-	for attempt in range(10):
-		div_count = 100
+	for attempt in range(100):
+		div_count = 10000
 		divs = [1] * div_count
 		time = iterate(div_count * .01)
 		times.append(time)
