@@ -22,3 +22,4 @@ if __name__ == "__main__":
 		time = flip(div_count * .01, numIterations = 0, hits = 0)
 		times.append(time)
 	print(times)
+	print(sum(times) / len(times))
