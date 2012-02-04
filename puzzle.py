@@ -14,9 +14,11 @@ def flip(n, numIterations, hits):
 
 
 if __name__ == "__main__":
+	times = []
 	for attempt in range(10):
 		div_count = 100
 		hits = 0
 		divs = [1] * div_count
 		time = flip(div_count * .01, numIterations = 0, hits = 0)
-		print(time)
+		times.append(time)
+	print(times)
